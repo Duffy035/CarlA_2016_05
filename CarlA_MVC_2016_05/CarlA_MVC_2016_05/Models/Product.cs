@@ -16,7 +16,7 @@ namespace CarlA_MVC_2016_05.Models
         public string Name { get; set; }
         [Required, MaxLength(500)]
         public string ProductText { get; set; }
-        [Required, /*CustomAttribute.CustomAttributeChecker*/] //Freddie, när jag använder min CustomAttribute-klass smäller sidan. Jag begriper inte varför, då klassen ser OK ut?
+        [Required, /*CustomAttributeChecker*/] //Freddie, när jag använder min CustomAttribute-klass smäller sidan. Jag begriper inte varför, då klassen ser OK ut?
         public int ProductNumber { get; set; }
         [Required]
         public double Price { get; set; }

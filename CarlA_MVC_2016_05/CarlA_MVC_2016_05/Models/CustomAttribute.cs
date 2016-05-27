@@ -8,8 +8,6 @@ using System.Web;
 
 namespace CarlA_MVC_2016_05.Models
 {
-    public class CustomAttribute
-    {
         public class CustomAttributeChecker : ValidationAttribute
         {
             public override bool IsValid(object value)
@@ -28,4 +26,3 @@ namespace CarlA_MVC_2016_05.Models
             }
         }
     }
-}
