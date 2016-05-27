@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Carl ANdersson
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +14,17 @@ namespace CarlA_MVC_2016_05
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.MapRoute(
+                name: "Hexa",
+                url: "SpriteController/Hexa/{id}",
+                defaults: new { controller = "SpriteController", action = "Hexa", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Octa",
+                url: "SpriteController/Octa/{id}",
+                defaults: new { controller = "SpriteController", action = "Octa", id = UrlParameter.Optional }
+            );
 
             routes.MapRoute(
                 name: "Default",
